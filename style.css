@@ -142,3 +142,45 @@ footer {
 .dark-mode .btn {
   background: #ff7518;
 }
+
+/* Seasonal heading styles */
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 2rem 0 1rem;
+  position: relative;
+  transition: color 0.5s ease, text-shadow 0.5s ease;
+}
+
+/* Default (Autumn) */
+h2 {
+  color: #ff7518;
+  text-shadow: 0 0 10px rgba(255,117,24,0.4);
+}
+
+/* Winter Theme (dark mode toggle) */
+body.dark-mode h2 {
+  color: #00bcd4;
+  text-shadow: 0 0 10px rgba(0,188,212,0.3);
+}
+
+/* Decorative underline */
+h2::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #ff7518, #ffe066);
+  border-radius: 2px;
+  transition: background 0.5s ease;
+}
+
+/* Winter underline variant */
+body.dark-mode h2::after {
+  background: linear-gradient(90deg, #00bcd4, #b3e5fc);
+}
