@@ -19,19 +19,32 @@ header {
   color: #fff;
   padding: 1rem 2rem;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: center; /* centers content horizontally */
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  left: 2rem;
+  font-weight: 700;
+  font-size: 1.4rem;
 }
 
 .logo span {
   color: #ffe066;
 }
 
+.nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
 .nav a {
   color: #fff;
   text-decoration: none;
-  margin: 0 0.75rem;
   font-weight: 600;
+  transition: 0.2s;
 }
 
 .nav a:hover {
@@ -39,6 +52,8 @@ header {
 }
 
 .theme-btn {
+  position: absolute;
+  right: 2rem;
   background: #fff;
   border: none;
   border-radius: 50%;
@@ -189,7 +204,7 @@ body.dark-mode h2::after {
 .hero p {
   font-size: 1.2rem;
   margin: 1rem 0 2rem;
-  color: #fffae5; /* default autumn light-gold tone */
+  color: #00bcd4; /* default autumn light-gold tone */
   text-shadow: 0 2px 4px rgba(0,0,0,0.3);
   transition: color 0.5s ease, text-shadow 0.5s ease;
 }
