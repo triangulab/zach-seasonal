@@ -184,3 +184,18 @@ h2::after {
 body.dark-mode h2::after {
   background: linear-gradient(90deg, #00bcd4, #b3e5fc);
 }
+
+/* Hero paragraph style */
+.hero p {
+  font-size: 1.2rem;
+  margin: 1rem 0 2rem;
+  color: #fffae5; /* default autumn light-gold tone */
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  transition: color 0.5s ease, text-shadow 0.5s ease;
+}
+
+/* Winter mode - soft frosty blue tone */
+body.dark-mode .hero p {
+  color: #cfe9ff;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
